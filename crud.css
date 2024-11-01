@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-image: url('img4.jpg');
+    background-size: cover;      /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+}
+
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: flex;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+/* Main Wrapper Styling */
+.mainWrapper {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.mainWrapper h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #57bd84;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+}
+
+button.btn:hover {
+    background-color: #45a06f;
+    transform: scale(1.05);
+}
+
+button.btn:active {
+    background-color: #3e8e5e;
+}
+
+/* File List Section */
+.file-list {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.file-list h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.file-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.file-list ul li {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.file-list ul li:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect for file list items */
+.file-list ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Improved Button Layout */
+button#btnCreate {
+    background-color: #4CAF50; /* Green */
+}
+
+button#btnRead {
+    background-color: #2196F3; /* Blue */
+}
+
+button#btnUpdate {
+    background-color: #FFC107; /* Amber */
+}
+
+button#btnDelete {
+    background-color: #F44336; /* Red */
+}
+
+button#btnCreate:hover,
+button#btnRead:hover,
+button#btnUpdate:hover,
+button#btnDelete:hover {
+    opacity: 0.9;
+}
+
+p {
+    font-size: 16px;                        /* Set font size for better readability */
+    line-height: 1.6;                      /* Increase line height for improved spacing */
+    color: #ffffff;                         /* Set a slightly darker color for contrast */
+    margin: 20px 40px;                     /* Add vertical margin and horizontal space */
+    padding: 10px;                         /* Add padding for a better layout */
+    background-color: transparent;          /* Light background for contrast */
+    border-left: 4px solid #e7ab07;        /* A colored left border to highlight the section */
+    text-align: center;                     /* Center align the text */
+    text-shadow: 0 0 10px rgb(0, 0, 0), /* Glow effect */
+                 0 0 20px rgb(0, 0, 0); /* Additional layer for more glow */
+}

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Activities page | WeatherWise</title>
+        <link rel="stylesheet" href="crud.css">
+        <nav>
+            <div class="menu">
+              <div class="logo">
+                <a href="#">WeatherWise</a>
+              </div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fetchweather.html">Weather</a></li>
+              </ul>
+            </div>
+          </nav>
+    </head>
+    <body>
+        <p>
+            Our website intelligently curates a list of activities tailored to the current weather conditions in your location. By simply entering your city, you’ll receive personalized recommendations that align with the forecast—whether it’s a sunny day perfect for outdoor adventures, a rainy day suited for cozy indoor activities, or mild temperatures inviting leisurely strolls. Additionally, users can write notes about their planned activities in a dedicated content box, where they can jot down important details, preferences, or reminders, ensuring that they stay organized and ready to make the most of their time, no matter what the weather brings.
+        </p>
+        <div class="mainWrapper">
+            <h1>User Activity Planner</h1>
+    
+            <form>
+                <div class="form-group">
+                    <label>Activity</label>
+                    <input id="fileName" type="text" class="form-control">
+                </div>
+    
+                <div class="form-group">
+                    <label>Content</label>
+                    <textarea id="fileContents" class="form-control" rows="5"></textarea>
+                </div>
+            </form>
+            <button id="btnCreate" class="btn btn-default">Create</button>
+            <button id="btnRead" class="btn btn-default">Read</button>
+            <button id="btnDelete" class="btn btn-default">Delete</button>
+            <button id="btnUpdate" class="btn btn-default">Update</button>
+    
+            <!-- Section to display and manage files in the directory -->
+            <div id="fileList" class="file-list">
+                <h3>Saved Activities:</h3>
+                <ul id="fileListContainer"></ul>
+            </div>
+    
+            <script src="crud.js"></script>
+        </div>
+    </body>
+    
+</html>

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Weather page | WeatherWise</title>
+        <link rel="stylesheet" href="fetchweather.css">
+        <nav>
+            <div class="menu">
+              <div class="logo">
+                <a href="#">WeatherWise</a>
+              </div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="crud.html">Activities</a></li>
+              </ul>
+            </div>
+          </nav>
+    </head>
+    <body>
+        
+        <div class="search">
+            <input type="text" id="city_input" placeholder="Enter City">
+            <button onclick="buttonClicked()">Enter</button>
+        </div>
+        
+        <div id="weatherapi-weather-widget-4"></div>
+
+        <!-- Container for the demo elements -->
+        <div class="demo-container1">
+            <h2>Information</h2>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            <p id="demo3"></p>
+            <p id="demo4"></p>
+            <p id="demo5"></p>
+            <p id="demo6"></p>
+            <p id="demo7"></p>
+            <p id="demo8"></p>
+            <p id="demo9"></p>
+        </div>
+        <div class="container">
+    <div class="demo-container2">
+        <h2>Forecast Weather</h2>
+        <p id="demo10"></p>
+        <p id="demo11"></p>
+        <p id="demo12"></p>
+    </div>
+    <div class="demo-container3">
+        <h2>Today Weather</h2>
+        <p id="demo18"></p>
+        <p id="demo19"></p>
+        <p id="demo20"></p>
+    </div>
+</div>
+        <div class="demo-container4">
+            <h2>Suggest Activities</h2>
+            <p id="activitySuggestion"></p>
+        </div>
+
+        <script src="fetchweather.js"></script>
+    </body>
+</html>
